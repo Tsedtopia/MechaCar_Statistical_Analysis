@@ -1,4 +1,4 @@
-# Delivery 1
+# Deliverable 1
 # import MechCar dataset
 # mpg_table <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = F)
 install.packages("dplyr")
@@ -7,7 +7,7 @@ View(mpg_table)
 lm(mpg~vehicle_length+vehicle_weight+spoiler_angle+ground_clearance+AWD,data=mpg_table) #create linear model
 summary(lm(mpg~vehicle_length+vehicle_weight+spoiler_angle+ground_clearance+AWD,mpg_table)) #summarize linear model
 
-#Delivery 2
+#Deliverable 2
 install.packages("dplyr")
 # Download the Suspension_Coil.csv and place in active directory
 Suspension_Coil_table = read.csv(file='Suspension_Coil.csv', check.names=F,stringsAsFactors = F)
@@ -19,7 +19,7 @@ summary_Suspension_Coil_table <- Suspension_Coil_table %>% summarize(Mean_PSI=me
 #create a lot summary
 lot_demo <- Suspension_Coil_table %>% group_by(Manufacturing_Lot) % > % summarize(Mean=mean(PSI),Median=(PSI),Variance=var(PSI),SD=sd(PSI))
 
-# Delivery 3
+# Deliverable 3
 #perform t-test to determine if the PSI across 
 # Peform t-test across all Lots
 t.test(Suspension$PSI,mu = 1500)
